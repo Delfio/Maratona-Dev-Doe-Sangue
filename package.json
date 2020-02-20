@@ -10,7 +10,8 @@
     "nunjucks": "^3.2.0"
   },
   "scripts": {
-    "dev": "nodemon src/sever.js"
+    "dev": "nodemon src/sever.js",
+    "start": "node src/sever.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
