@@ -1,0 +1,19 @@
+{
+  "name": "frontend-doadores",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Este projeto foi desenvolvido com fins sociais e estudantis. O objetivo deste sistema é fornecer aos doadores um meio alternativo de se cadastrar a um banco de doação de sangue.",
+  "author": {
+    "email": "delfio_eu@hotmail.com",
+    "name": "Delfio Francisco",
+    "url": "https://github.com/Delfio"
+  },
+  "creditos": {
+    "Propriedade intelectual": " Rocketseat ",
+    "link": "https://rocketseat.com.br/",
+    "tutor": {
+      "name": "Maik Brito"
+    }
+  }
+}

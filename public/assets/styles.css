@@ -1,0 +1,189 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  font-family: "Roboto", sans-serif;
+
+  background-color: #f9f9f9;
+}
+
+/* Alinhamento  */
+header,
+main,
+footer {
+  text-align: center;
+}
+
+/* BOTTÃO DO HEADER */
+
+header button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ff4f4f;
+  color: white;
+
+  font-weight: bold;
+}
+
+/* Margin dos textos */
+header h1,
+main h2 {
+  margin-bottom: 70px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 120px;
+  margin: 70px 0;
+}
+
+header p {
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  color: rgba(22, 21, 21, 0.774);
+}
+
+main h2 span {
+  color: #ff4f4f;
+}
+
+.form h2 {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.932);
+  font-size: 20px;
+}
+
+header,
+.form,
+main {
+  margin-bottom: 70px;
+
+  width: 90%;
+  max-width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .donors {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+
+.blood {
+  color: #ff4f4f;
+  font-weight: bold;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.blood::before {
+  content: "";
+  background-color: #ff4f4f25;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+
+  /* GOTA */
+
+  border-radius: 50%;
+  border-top-right-radius: 0;
+
+  transform: rotate(-45deg);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+
+  align-items: center;
+
+  background-color: #ff4f4f;
+  padding: 16px 64px;
+
+  border-radius: 7px;
+}
+
+.donor p {
+  margin-top: 24px;
+  font-size: 14px;
+  margin-bottom: 64px;
+}
+
+form input,
+form button {
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+form input {
+  background-color: transparent;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.596);
+}
+
+form button {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: auto;
+  padding: 16px;
+
+  border: 1px solid #eee;
+}
+
+/* Aplicar funcionalidades do javascript */
+
+section.form {
+  transition: all 400ms !important;
+}
+
+section.form.hide {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: -75px;
+}
+/* Remover setas do input tipo número */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
